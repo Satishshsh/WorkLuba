@@ -8,49 +8,56 @@ body{
 
 }
 nav {
-    /* margin-right: 20px; */
-    /* margin-top: 10px; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #000000;
-    width: 100%;
-    height: 70px;
-     box-shadow: 0px 4px 1px #000000;
-     position: fixed;
-     
-    }
-    
-    .logo{
-        margin-top: 17px;
-        border-bottom: 2px solid #333333;
-    }
-    img{height: 80px;
-        width: 90px;
-
+  /* margin-right: 20px; */
+  /* margin-top: 10px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #000000;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 4px 1px #000000;
+  position: fixed;
+  z-index: 10;
 }
-ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 20px;
-    
+
+.logo {
+  margin-top: 17px;
+  /* border-bottom: 2px solid #333333; */
+}
+img {
+  height: 80px;
+  width: 90px;
+}
+
+.menu-icon{
+    display:none !important;
+    color:rgb(255, 255, 255);
+    font-size:25px;
+    cursor:pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
 }
 ul li {
-    list-style: none;
-    font-size: 20px;
-    margin-right: 25px;
+  list-style: none;
+  font-size: 20px;
+  margin-right: 25px;
 }
-ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: 600px;
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600px;
 }
-ul li a:hover{
-    text-decoration: underline;
-    text-decoration-color: #a65dea;
-    color: #ab6de5;
+ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #a65dea;
+  color: #ab6de5;
 }
 
 .join{
@@ -227,4 +234,157 @@ ul li a:hover{
 
 .social-icons i:hover{
     color:#8919f2; /* Fiverr Green */
+}
+@media (max-width:768px)
+{
+
+    /* Navbar */
+
+    nav{
+        flex-direction:column;
+        height:auto;
+        /* padding-bottom:15px; */
+        position: relative;
+        height: 40px;
+    }
+    nav .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    ul{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction:column;
+        gap:10px;
+        position: absolute;
+        /* margin-top:15px; */
+    }
+/* menu icon */
+      .menu-icon{
+        display:block !important;
+        position: absolute;
+        margin-right:20px;
+        margin-top:30px; 
+        margin-left: 10px;   
+    }
+
+    #sidebar{
+        position:fixed;
+        top:0;
+        left:-250px;
+        width:250px;
+        height:100vh;
+        background:#111;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-start;
+        padding-top:80px;
+        transition:0.4s;
+        z-index:100;
+    }
+
+    #sidebar li{
+        margin:20px;
+    }
+
+    .close-btn{
+    color:white;
+    font-size:30px;
+    margin-left:200px;
+    cursor:pointer;
+}
+.design{
+  margin-left: 40px;
+    
+}
+.explore{
+    margin-left: 40px;
+}
+
+.join_p{
+    text-align:center;
+    margin-left:0;
+}
+
+.join_work_luba{
+    text-align:center;
+    margin-left:0;
+}
+.join_work{
+    height: 300px;
+}
+.btn{
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+    }
+.category{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-left:0;
+    gap:15px;
+}
+.title-row{
+    display:flex;
+    /* justify-content:space-between; */
+    align-items:center;
+}
+
+.title-row h3{
+    color:white;
+    margin:15px 0;
+}
+
+.title-row i{
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    margin-left: 20px;
+}
+
+   .service-list{
+        display:none !important;
+    }
+
+    .service-list.active{
+        display:flex !important;
+        flex-direction:column !important;
+        /* margin-bottom: 300px !important; */
+    }
+
+ .main-icon{
+        display:block !important;
+       
+    }
+
+
+
+
+
+
+.graphics-section{
+    width:95%;
+    margin:30px 40px;
+}
+
+.graphics-grid{
+    grid-template-columns:1fr;
+}
+    /* Footer */
+  .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .last_footer{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .social-icons{
+        margin-left:0;
+        margin-right:0;
+        margin-bottom: 40px;
+    }
 }

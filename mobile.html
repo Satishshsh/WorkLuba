@@ -15,12 +15,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             <img src="images/Main_Logo.png">
         </section>
 
-        <ul>
+
+        <i class="fa-solid fa-bars menu-icon" onclick="openMenu()"></i>
+
+        <ul id="sidebar">
+
+            <i class="fa-solid fa-xmark close-btn" onclick="closeMenu()"></i>
+
             <li><a href="index.html">Home</a></li>
             <li><a href="service.html">Services</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="contactUs.html">Contact Us</a></li>
-           
+
         </ul>
 
     </nav>
@@ -49,7 +55,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </section>
 
      <section class="popular">
-        <div class="popular_ser"><h1 class="explore">Explore Video & Animation</h1></div>
+        <div class="popular_ser"><h1 class="explore">Explore Mobile Development</h1></div>
     </section>
 
     <section class="graphics-section">
@@ -60,10 +66,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
         <div class="category-card">
             <img src="images/graphic.png">
+                <div class="title-row">
 
             <h3>Video Editing</h3>
-
-            <ul>
+                <i class="fa-solid fa-angle-down main-icon" onclick="toggleMenu(this)"></i>
+</div>
+            <ul class="service-list">
                 <li>Logo Design</li>
                 <li>Brand Style Guides</li>
                 <li>Business Cards</li>
@@ -74,10 +82,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
        
         <div class="category-card">
             <img src="images/graphic.png">
+                <div class="title-row">
 
             <h3>Animation</h3>
-
-            <ul>
+                <i class="fa-solid fa-angle-down main-icon" onclick="toggleMenu(this)"></i>
+                </div>
+            <ul class="service-list">
                 <li>Illustration</li>
                 <li>AI Artists</li>
                 <li>Comic Illustration</li>
@@ -87,10 +97,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
         <div class="category-card">
             <img src="images/graphic.png">
+                <div class="title-row">
 
             <h3>Motion Graphics</h3>
-
-            <ul>
+                <i class="fa-solid fa-angle-down main-icon" onclick="toggleMenu(this)"></i>
+                </div>
+            <ul class="service-list">
                 <li>Interior Design</li>
                 <li>Landscape Design</li>
                 <li>Building Engineering</li>
@@ -109,10 +121,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
         <div class="category-card">
             <img src="images/graphic.png">
+                <div class="title-row">
 
             <h3>3D & Visual Effects</h3>
-
-            <ul>
+                <i class="fa-solid fa-angle-down main-icon" onclick="toggleMenu(this)"></i>
+                </div>
+            <ul class="service-list">
                 <li>Logo Design</li>
                 <li>Brand Style Guides</li>
                 <li>Business Cards</li>
@@ -123,10 +137,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
        
         <div class="category-card">
             <img src="images/graphic.png">
+                <div class="title-row">
 
             <h3>Social Media Videos</h3>
-
-            <ul>
+                <i class="fa-solid fa-angle-down main-icon" onclick="toggleMenu(this)"></i>
+                </div>
+            <ul class="service-list">
                 <li>Illustration</li>
                 <li>AI Artists</li>
                 <li>Comic Illustration</li>
@@ -136,10 +152,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
         <div class="category-card">
             <img src="images/graphic.png">
+                <div class="title-row">
 
             <h3>Video Production</h3>
-
-            <ul>
+                <i class="fa-solid fa-angle-down main-icon" onclick="toggleMenu(this)"></i>
+                </div>
+            <ul class="service-list">
                 <li>Interior Design</li>
                 <li>Landscape Design</li>
                 <li>Building Engineering</li>
@@ -195,6 +213,46 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         <i class="fa-brands fa-x-twitter"></i>
       </div>
     </footer>
+ <script>
+        const slider = document.getElementById("slider");
+        function slideRight() {
+            slider.scrollLeft += 300;
+        }
+        function slideLeft() {
+            slider.scrollLeft -= 300;
+        }
+        const sidebar = document.getElementById("sidebar");
 
+        function openMenu() {
+            sidebar.style.left = "0";
+        }
+        function closeMenu() {
+            sidebar.style.left = "-250px";
+        }
+
+        
+
+function toggleMenu(icon){
+
+    const card = icon.closest(".category-card");
+    const list = card.querySelector(".service-list");
+
+    list.classList.toggle("active");
+    icon.classList.toggle("rotate");
+
+    // next card ki image
+    // const nextCard = card.nextElementSibling;
+
+    // if(nextCard){
+    //     const nextImg = nextCard.querySelector("img");
+
+    //     if(list.classList.contains("active")){
+    //         nextImg.style.marginTop = "170px";
+    //     }else{
+    //         nextImg.style.marginTop = "0px";
+    //     }
+    // }
+}
+    </script>
 </body>
 </html>

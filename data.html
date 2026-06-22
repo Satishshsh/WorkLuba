@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Category</title>
-      <link rel="stylesheet" href="css/data.css" >
-    <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/data.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-      <nav>
+    <nav>
         <section class="logo">
 
             <img src="images/Main_Logo.png">
         </section>
 
-        <ul>
+
+        <i class="fa-solid fa-bars menu-icon" onclick="openMenu()"></i>
+
+        <ul id="sidebar">
+
+            <i class="fa-solid fa-xmark close-btn" onclick="closeMenu()"></i>
+
             <li><a href="index.html">Home</a></li>
             <li><a href="service.html">Services</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="contactUs.html">Contact Us</a></li>
-           
+
         </ul>
 
     </nav>
-    
-     <section class="join">
+
+    <section class="join">
         <div class="join_work">
             <p class="join_work_luba"> Data </p>
             <p class="join_p">Turn Data into Business Growth</p>
 
-<button class="btn">Join Workluba</button>
+            <button class="btn">Join Workluba</button>
         </div>
     </section>
 
     <section class="popular">
-        <div class="popular_ser"><h1 class="design">Most Popular in Data Category</h1></div>
+        <div class="popular_ser">
+            <h1 class="design">Most Popular in Data Category</h1>
+        </div>
     </section>
 
     <section class="category">
@@ -44,146 +53,200 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         <div class="box">Excel & Spreadsheet</div>
         <div class="box">Power BI & Reporting</div>
         <div class="box">Database</div>
-        
-        
+
+
     </section>
 
-     <section class="popular">
-        <div class="popular_ser"><h1 class="explore">Explore Data Category</h1></div>
+    <section class="popular">
+        <div class="popular_ser">
+            <h1 class="explore">Explore Data Category</h1>
+        </div>
     </section>
 
     <section class="graphics-section">
 
-    
 
-    <div class="graphics-grid">
 
-        <div class="category-card">
-            <img src="images/graphic.png">
+        <div class="graphics-grid">
 
-            <h3>Data Entry</h3>
+            <div class="category-card">
+                <img src="images/graphic.png">
 
-            <ul>
-                <li>Logo Design</li>
-                <li>Brand Style Guides</li>
-                <li>Business Cards</li>
-                <li>Typography</li>
-            </ul>
+                <div class="title-row">
+                    <h3>Data Entry</h3>
+                <i class="fa-solid fa-angle-down main-icon" onclick="toggleMenu(this)"></i>
+                </div>
+                <ul class="service-list">
+                    <li>Logo Design</li>
+                    <li>Brand Style Guides</li>
+                    <li>Business Cards</li>
+                    <li>Typography</li>
+                </ul>
+            </div>
+
+
+            <div class="category-card">
+                <img src="images/graphic.png">
+                <div class="title-row">
+
+                    <h3>Data Analysis</h3>
+                   <i class="fa-solid fa-angle-down main-icon" onclick="toggleMenu(this)"></i>
+                </div>
+                <ul class="service-list">
+                    <li>Illustration</li>
+                    <li>AI Artists</li>
+                    <li>Comic Illustration</li>
+                    <li>Cartoon Illustration</li>
+                </ul>
+            </div>
+
+            <div class="category-card">
+                <img src="images/graphic.png">
+                <div class="title-row">
+
+                    <h3>Excel & Spreadsheet</h3>
+                   <i class="fa-solid fa-angle-down main-icon" onclick="toggleMenu(this)"></i>
+                </div>
+                <ul class="service-list">
+                    <li>Interior Design</li>
+                    <li>Landscape Design</li>
+                    <li>Building Engineering</li>
+                    <li>Lighting Design</li>
+                </ul>
+            </div>
+
         </div>
 
-       
-        <div class="category-card">
-            <img src="images/graphic.png">
+    </section>
+    <section class="graphics-section">
 
-            <h3>Data Analysis</h3>
 
-            <ul>
-                <li>Illustration</li>
-                <li>AI Artists</li>
-                <li>Comic Illustration</li>
-                <li>Cartoon Illustration</li>
-            </ul>
+
+        <div class="graphics-grid">
+
+            <div class="category-card">
+                <img src="images/graphic.png">
+                <div class="title-row">
+
+                    <h3>Power BI & Reporting</h3>
+                    <i class="fa-solid fa-angle-down main-icon" onclick="toggleMenu(this)"></i>
+                </div>
+                <ul class="service-list">
+                    <li>Logo Design</li>
+                    <li>Brand Style Guides</li>
+                    <li>Business Cards</li>
+                    <li>Typography</li>
+                </ul>
+            </div>
+
+
+            <div class="category-card">
+                <img src="images/graphic.png">
+                <div class="title-row">
+                    <h3>Database</h3>
+                    <i class="fa-solid fa-angle-down main-icon" onclick="toggleMenu(this)"></i>
+                </div>
+                <ul class="service-list">
+                    <li>Illustration</li>
+                    <li>AI Artists</li>
+                    <li>Comic Illustration</li>
+                    <li>Cartoon Illustration</li>
+                </ul>
+            </div>
+
+
+
         </div>
 
-        <div class="category-card">
-            <img src="images/graphic.png">
+    </section>
 
-            <h3>Excel & Spreadsheet</h3>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Categories</h3>
+                <a href="#">Graphics & Design</a>
+                <a href="#">Digital Marketing</a>
+                <a href="#">Writing & Translation</a>
+                <a href="#">Video & Animation</a>
+                <a href="#">Music & Audio</a>
+                <a href="#">Programming & Tech</a>
+                <a href="#">AI Services</a>
+            </div>
 
-            <ul>
-                <li>Interior Design</li>
-                <li>Landscape Design</li>
-                <li>Building Engineering</li>
-                <li>Lighting Design</li>
-            </ul>
+            <div class="footer-column">
+                <h3>For Clients</h3>
+                <a href="#">How Fiverr Works</a>
+                <a href="#">Customer Success Stories</a>
+                <a href="#">Quality Guide</a>
+                <a href="#">Fiverr Guides</a>
+                <a href="#">Fiverr Answers</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Company</h3>
+                <a href="#">About Us</a>
+                <a href="#">Help Center</a>
+                <a href="#">Careers</a>
+                <a href="#">Privacy Policy</a>
+            </div>
         </div>
-
-    </div>
-
-</section>
-  <section class="graphics-section">
-
-    
-
-    <div class="graphics-grid">
-
-        <div class="category-card">
-            <img src="images/graphic.png">
-
-            <h3>Power BI & Reporting</h3>
-
-            <ul>
-                <li>Logo Design</li>
-                <li>Brand Style Guides</li>
-                <li>Business Cards</li>
-                <li>Typography</li>
-            </ul>
-        </div>
-
-       
-        <div class="category-card">
-            <img src="images/graphic.png">
-
-            <h3>Database</h3>
-
-            <ul>
-                <li>Illustration</li>
-                <li>AI Artists</li>
-                <li>Comic Illustration</li>
-                <li>Cartoon Illustration</li>
-            </ul>
-        </div>
-
-       
-
-    </div>
-
-</section>
-
- <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-column">
-          <h3>Categories</h3>
-          <a href="#">Graphics & Design</a>
-          <a href="#">Digital Marketing</a>
-          <a href="#">Writing & Translation</a>
-          <a href="#">Video & Animation</a>
-          <a href="#">Music & Audio</a>
-          <a href="#">Programming & Tech</a>
-          <a href="#">AI Services</a>
-        </div>
-
-        <div class="footer-column">
-          <h3>For Clients</h3>
-          <a href="#">How Fiverr Works</a>
-          <a href="#">Customer Success Stories</a>
-          <a href="#">Quality Guide</a>
-          <a href="#">Fiverr Guides</a>
-          <a href="#">Fiverr Answers</a>
-        </div>
-
-        <div class="footer-column">
-          <h3>Company</h3>
-          <a href="#">About Us</a>
-          <a href="#">Help Center</a>
-          <a href="#">Careers</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-      </div>
     </footer>
     <hr />
     <footer class="last_footer">
-      <div>
-        <img src="images/Main_Logo.png" alt="" />
-      </div>
-      <div class="social-icons">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-facebook"></i>
+        <div>
+            <img src="images/Main_Logo.png" alt="" />
+        </div>
+        <div class="social-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-facebook"></i>
 
-        <i class="fa-brands fa-x-twitter"></i>
-      </div>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
     </footer>
 
+    <script>
+        const slider = document.getElementById("slider");
+        function slideRight() {
+            slider.scrollLeft += 300;
+        }
+        function slideLeft() {
+            slider.scrollLeft -= 300;
+        }
+        const sidebar = document.getElementById("sidebar");
+
+        function openMenu() {
+            sidebar.style.left = "0";
+        }
+        function closeMenu() {
+            sidebar.style.left = "-250px";
+        }
+
+        
+
+function toggleMenu(icon){
+
+    const card = icon.closest(".category-card");
+    const list = card.querySelector(".service-list");
+
+    list.classList.toggle("active");
+    icon.classList.toggle("rotate");
+
+    // next card ki image
+    // const nextCard = card.nextElementSibling;
+
+    // if(nextCard){
+    //     const nextImg = nextCard.querySelector("img");
+
+    //     if(list.classList.contains("active")){
+    //         nextImg.style.marginTop = "170px";
+    //     }else{
+    //         nextImg.style.marginTop = "0px";
+    //     }
+    // }
+}
+    </script>
+
 </body>
+
 </html>
