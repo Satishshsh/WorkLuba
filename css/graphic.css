@@ -125,6 +125,10 @@ ul li a:hover {
     border-radius: 10px;
     font-size: 17px;
 }
+.box:hover {
+  box-shadow: 0px 5px 8px #811ddf;
+  cursor: pointer;
+}
 .explore{
     color: #fff;
     margin-left: 130px;
@@ -148,6 +152,7 @@ ul li a:hover {
 }
 
 .category-card img{
+    margin-top: 0px !important;
     width: 80%;
     height: 220px;
     object-fit: cover;
@@ -207,6 +212,10 @@ ul li a:hover {
     text-decoration: underline;
     color: rgb(121, 50, 228);
 }
+hr {
+  margin-top: 30px;
+  border: 1.5px solid #0b0b0b;
+}
 .last_footer{
      display:flex;
     align-items:center;
@@ -257,7 +266,7 @@ ul li a:hover {
         justify-content: flex-start;
         flex-direction:column;
         gap:10px;
-        position: absolute;
+        /* position: absolute; */
         /* margin-top:15px; */
     }
 /* menu icon */
@@ -372,6 +381,9 @@ ul li a:hover {
     grid-template-columns:1fr;
 }
     /* Footer */
+    .footer-column a{
+      font-size: 12px;
+    }
   .footer-container{
         grid-template-columns:1fr;
         text-align:center;

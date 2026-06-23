@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Design</title>
+    <link rel="stylesheet" href="css/website.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <section class="logo">
+        <a href="index.html"> <img src="images/Main_Logo.png" /></a>
+      </section>
+
+      <i class="fa-solid fa-bars menu-icon" onclick="openMenu()"></i>
+
+      <ul id="sidebar">
+        <i class="fa-solid fa-xmark close-btn" onclick="closeMenu()"></i>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section class="join">
+        <div class="join_work">
+            <p class="join_work_luba"> Website Design</p>
+            <p class="join_p">Creating Websites That Make an Impact </p>
+        <button class="btn">Join Workluba</button>
+      </div>
+    </section>
+
+     <section class="popular">
+        <div class="popular_ser"><h1 class="design">Most Popular in Web Design</h1></div>
+    </section>
+
+    <section class="category">
+       <a href="ui.html"> <div class="box">UI/UX Web Design</div></a>
+        <a href="figma.html"><div class="box">Figma Web Design</div></a>
+       <a href="landing.html"> <div class="box">Landing Page Design</div></a>
+       <a href="website.html"> <div class="seprate">Web Site Design</div></a>
+        <a href="e.html"><div class="box">E-commerce Design</div></a>
+        
+    </section>
+
+    <section class="popular">
+      <div class="popular_ser">
+        <h1 class="explore">Explore Website Design </h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="popular">
+        <div class="popular_box">
+          <div class="box1">
+            <img src="images/web de.png" class="ser_img" />
+            <p class="web">Web Design</p>
+            <p class="landing">Landind Page</p>
+          </div>
+          <div class="box1">
+            <img src="images/web de.png" class="ser_img" />
+            <p class="web">Web Design</p>
+            <p class="functional">Functional Website</p>
+          </div>
+          <div class="box1">
+            <img src="images/graphic.png" class="ser_img" />
+            <p class="g-design">Graphics Design</p>
+            <p class="log">Logo Design</p>
+          </div>
+          <div class="box1">
+            <img src="images/graphic.png" class="ser_img" />
+            <p class="g-design">Graphics Design</p>
+            <p class="poster">Poster Design</p>
+          </div>
+        </div>
+        <div class="popular_box1">
+          <div class="box2">
+            <img src="images/data.png" class="ser_img" />
+            <p class="data">Data Analyst</p>
+            <p class="format">Format Data</p>
+          </div>
+          <div class="box2">
+            <img src="images/data.png" class="ser_img" />
+            <p class="ui">UI/UX Designer</p>
+            <p class="figma">Figma Design</p>
+          </div>
+          <div class="box2">
+            <img src="images/mobile aap.png" class="ser_img" />
+            <p class="video">Video & Animation</p>
+            <p class="premier">Video Editing</p>
+          </div>
+          <div class="box2">
+            <img src="images/mobile aap.png" class="ser_img" />
+            <p class="app">Mobile App Developer</p>
+            <p class="android">Android App</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Categories</h3>
+          <a href="graphic&design.html">Graphics & Design</a>
+          <a href="digital.html">Digital Marketing</a>
+          <a href="data.html">Data Category</a>
+          <a href="video.html">Video & Animation</a>
+          <a href="web.html">Web Development</a>
+          <a href="mobile.html">Mobile App Development</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>For Clients</h3>
+          <a href="#">How WorkLuba Works</a>
+          <a href="#">Customer Success Stories</a>
+          <a href="#">Quality Guide</a>
+          <a href="#">WorlLuba Guides</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <a href="#">About Us</a>
+          <a href="contactUs.html">Contact Us</a>
+
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+    <hr />
+    <footer class="last_footer">
+      <div>
+        <img src="images/Main_Logo.png" alt="" />
+      </div>
+      <div class="social-icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-facebook"></i>
+
+        <i class="fa-brands fa-x-twitter"></i>
+      </div>
+    </footer>
+
+    <script>
+      const slider = document.getElementById("slider");
+      function slideRight() {
+        slider.scrollLeft += 300;
+      }
+      function slideLeft() {
+        slider.scrollLeft -= 300;
+      }
+      const sidebar = document.getElementById("sidebar");
+
+      function openMenu() {
+        sidebar.style.left = "0";
+      }
+      function closeMenu() {
+        sidebar.style.left = "-250px";
+      }
+    </script>
+  </body>
+</html>

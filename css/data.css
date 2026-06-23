@@ -79,7 +79,7 @@ ul li a:hover {
 .join_p{
     color: #fff;
     margin-top: 15px;
-    margin-left: 400px;
+    margin-left: 420px;
     font-size: 25px;
 }
 .join_work_luba{
@@ -88,7 +88,7 @@ ul li a:hover {
     
     /* background-color: #0b0b0b; */
     font-size: 45px;
-    margin-left: 520px;
+    margin-left: 530px;
     /* line-height: 65px; */
 }
 .btn{
@@ -125,6 +125,10 @@ ul li a:hover {
     border-radius: 10px;
     font-size: 17px;
 }
+.box:hover {
+  box-shadow: 0px 5px 8px #811ddf;
+  cursor: pointer;
+}
 .explore{
     color: #fff;
     margin-left: 130px;
@@ -141,28 +145,6 @@ ul li a:hover {
     margin-bottom: 30px;
 }
 
-.main-icon{
-    display:none !important;
-    color:rgb(255, 255, 255);
-    font-size:25px;
-    cursor:pointer;
-}
- 
- .main-icon{
-    cursor:pointer;
-    transition:0.3s;
-    color:white;
-}
-
-.main-icon.rotate{
-    transform:rotate(180deg);
-}
-
-.service-list{
-    display:flex;
-    flex-direction:column;
-}
-
 .graphics-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -170,6 +152,7 @@ ul li a:hover {
 }
 
 .category-card img{
+    margin-top: 0px !important;
     width: 80%;
     height: 220px;
     object-fit: cover;
@@ -229,6 +212,10 @@ ul li a:hover {
     text-decoration: underline;
     color: rgb(121, 50, 228);
 }
+hr {
+  margin-top: 30px;
+  border: 1.5px solid #0b0b0b;
+}
 .last_footer{
      display:flex;
     align-items:center;
@@ -257,9 +244,6 @@ ul li a:hover {
 .social-icons i:hover{
     color:#8919f2; /* Fiverr Green */
 }
-
-
-
 @media (max-width:768px)
 {
 
@@ -282,7 +266,7 @@ ul li a:hover {
         justify-content: flex-start;
         flex-direction:column;
         gap:10px;
-        position: absolute;
+        /* position: absolute; */
         /* margin-top:15px; */
     }
 /* menu icon */
@@ -336,6 +320,9 @@ ul li a:hover {
     text-align:center;
     margin-left:0;
 }
+.join_work{
+    height: 300px;
+}
 .btn{
         margin-left:auto;
         margin-right:auto;
@@ -372,7 +359,7 @@ ul li a:hover {
     .service-list.active{
         display:flex !important;
         flex-direction:column !important;
-        margin-bottom: 300px !important;
+        /* margin-bottom: 300px !important; */
     }
 
  .main-icon{
@@ -394,6 +381,9 @@ ul li a:hover {
     grid-template-columns:1fr;
 }
     /* Footer */
+    .footer-column a{
+      font-size: 12px;
+    }
   .footer-container{
         grid-template-columns:1fr;
         text-align:center;
